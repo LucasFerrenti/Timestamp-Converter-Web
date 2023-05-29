@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Timestamp Converter</title>
+    <link rel="shortcut icon" href="https://timestamp.online/static/Alarm-64x64.png">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/timestamp.css">
+    <script src="./assets/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+    <script src="./assets/clipboard.min.js" crossorigin="anonymous"></script>
+    <script src="./assets/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/timestamp.js" async=""></script>
+  </head>
+  <body onload="init()" aria-hidden="false" style="padding: 0px; margin: 0px;">
+    <div class="container" id="main" style="height: auto !important;">
+      <div id="allIn" style="height: auto !important;">
+        <div class="row">
+          <div>
+            <h1 class="text-center">Timestamp Converter</h1>
+          </div>
+          <div id="conversion-form" style="margin-top:30px;">
+            <div class="col-md-6 text-center">
+              <h3>To date</h3>
+              <input type="text" id="ts2human_inp" value="1685295165" class="form-control input-lg" placeholder="Timestamp">
+              <button onclick="ts2human()" class="btn-lg btn-block">Convert</button>
+              <input type="text" id="ts2human_out_inp" value="" class="form-control input-lg">
+            </div>
+            <div class="col-md-6 text-center">
+              <h3>To Timestamp</h3>
+              <input type="text" id="human2ts_inp" value="2023/05/28 19:32:45" class="form-control input-lg" placeholder="Date">
+              <button onclick="human2ts()" class="btn-lg btn-block">Convert</button>
+              <input type="text" id="human2ts_out_inp" value="" class="form-control input-lg"> 
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
